@@ -1,6 +1,4 @@
 import random
-from multiprocessing.connection import answer_challenge
-from operator import index, truediv
 
 HANGMANPICS = [r'''
 
@@ -60,11 +58,11 @@ HANGMANPICS = [r'''
       |
 =========''']
 
-#======כאן יש להוסיף אוסף של מילים=====
+#======כאן יש  אוסף של מילים=====
 
-words=['hello','yael','banana','apple','child']
+words=['hello','girl','banana','apple','child']
 
-#============כאן יכתבו הפונקציות=============
+#============כאן הפונקציות=============
 def displayBoard(HANGMANPICS,missedLetters,correctLetters,secretWord):
     print(HANGMANPICS[len(missedLetters)] )
     print('missedLetters: ' +missedLetters)
